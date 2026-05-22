@@ -9,6 +9,7 @@
                         <li><a href="<?= base_url('sobre'); ?>">Sobre Nós</a></li>
                         <li><a href="<?= base_url('servicos'); ?>">Serviços</a></li>
                         <li><a href="<?= base_url('noticias'); ?>">Blog</a></li>
+                        <li><a href="<?= base_url('politica-de-privacidade'); ?>">Política de Privacidade</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-auto text-center text-md-start">
