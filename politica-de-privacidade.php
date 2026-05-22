@@ -7,7 +7,7 @@
         <h1 class="fw-bolder mb-2 mt-2" style="color: var(--text-main);">Política de <span class="text-accent">Privacidade & Cookies</span></h1>
         <p class="text-muted-custom small">Entenda como protegemos seus dados e garantimos sua privacidade em nosso portal.</p>
     </div>
-</</section>
+</section>
 
 <!-- Conteúdo Principal -->
 <section class="py-6" style="background-color: var(--bg-main);">
@@ -126,7 +126,7 @@
                             <p class="text-muted-custom small mb-0" style="line-height: 1.6;">Você pode alterar seu consentimento a qualquer momento usando nosso Painel de Consentimento de Cookies nativo. Clique no botão abaixo para reabrir as configurações de preferências.</p>
                         </div>
                         <div class="col-md-5 text-md-end">
-                            <button type="button" class="btn btn-accent rounded-pill w-100 justify-content-center" onclick="preferencesCookieConsent();">
+                            <button type="button" class="btn btn-accent rounded-pill w-100 justify-content-center" onclick="document.getElementById('cookieSettingsBtn').click();">
                                 <i class="fa-solid fa-cookie-bite me-2"></i>Configurar Cookies
                             </button>
                         </div>
