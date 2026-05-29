@@ -2,13 +2,24 @@
 $urlImg: '../images/';
 
 // FONT-FAMILY
-$fontFamily: "Roboto", sans-serif;
-$poppins: "Poppins", sans-serif;
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$fontFamily: $font-family-sans-serif;
+$poppins: $font-family-sans-serif;
 
 // COLORS
 $primary:     #d4af37;
 $secondary:   #8a8c4f;
 
+// Custom variables for Bootstrap Dark Mode
+$body-bg: #18191c;
+$body-color: #ffffff;
+$body-bg-dark: #18191c;
+$body-color-dark: #ffffff;
+$body-secondary-bg-dark: #222327;
+$body-secondary-color-dark: #a0a2aa;
+$body-tertiary-bg-dark: #2a2b30;
+$border-color-dark: #3b3d42;
 
 // SPACERS ARRAY --------------------
 $spacer: 1rem;
@@ -29,5 +40,16 @@ $spacers: (
 :root{
     --bs-white: #FFFFFF;
     --bs-black: #000000;
+
+    // Dynamic aliases for legacy variables mapping to standard Bootstrap variables
+    --bg-main: var(--bs-body-bg);
+    --bg-secondary: var(--bs-secondary-bg);
+    --bg-card: var(--bs-tertiary-bg);
+    --text-main: var(--bs-body-color);
+    --text-muted: var(--bs-secondary-color);
+    --accent-color: var(--bs-primary);
+    --accent-hover: #{darken($primary, 10%)};
+    --font-primary: var(--bs-body-font-family);
+    --border-color: var(--bs-border-color);
 }
-    $min-contrast-ratio: 2 !default;
+$min-contrast-ratio: 2 !default;
