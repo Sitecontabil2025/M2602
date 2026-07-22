@@ -3,8 +3,8 @@
 <!-- Breadcrumb / Cabeçalho da Página -->
 <section class="bg-light pb-5 border-bottom pt-header" style="background: var(--bg-secondary) !important; border-color: var(--border-color) !important; padding-top: 150px;">
     <div class="container text-center pt-4" data-aos="fade-down">
-        <span class="text-accent subheading">Segurança & Conformidade</span>
-        <h1 class="fw-bolder mb-2 mt-2" style="color: var(--text-main);">Política de <span class="text-accent">Privacidade & Cookies</span></h1>
+        <span class="text-primary subheading">Segurança & Conformidade</span>
+        <h1 class="fw-bolder mb-2 mt-2" style="color: var(--text-main);">Política de <span class="text-primary">Privacidade & Cookies</span></h1>
         <p class="text-muted-custom small">Entenda como protegemos seus dados e garantimos sua privacidade em nosso portal.</p>
     </div>
 </section>
@@ -18,15 +18,15 @@
             <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right">
                 <div class="sticky-top" style="top: 100px; z-index: 10;">
                     <div class="p-4 rounded-4 shadow-sm" style="background: var(--bg-card); border: 1px solid var(--border-color);">
-                        <h5 class="fw-bold mb-3 text-accent" style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Índice</h5>
+                        <h5 class="fw-bold mb-3 text-primary" style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Índice</h5>
                         <ul class="nav flex-column gap-2" style="font-size: 0.9rem;">
-                            <li><a href="#introducao" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>1. Introdução</a></li>
-                            <li><a href="#coleta-dados" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>2. Coleta de Dados</a></li>
-                            <li><a href="#uso-cookies" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>3. O que são Cookies?</a></li>
-                            <li><a href="#gerenciamento-cookies" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>4. Gestão de Cookies</a></li>
-                            <li><a href="#direitos-lgpd" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>5. Direitos (LGPD)</a></li>
-                            <li><a href="#seguranca" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>6. Segurança dos Dados</a></li>
-                            <li><a href="#contato" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-accent" style="font-size: 0.7rem;"></i>7. Fale Conosco</a></li>
+                            <li><a href="#introducao" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>1. Introdução</a></li>
+                            <li><a href="#coleta-dados" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>2. Coleta de Dados</a></li>
+                            <li><a href="#uso-cookies" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>3. O que são Cookies?</a></li>
+                            <li><a href="#gerenciamento-cookies" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>4. Gestão de Cookies</a></li>
+                            <li><a href="#direitos-lgpd" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>5. Direitos (LGPD)</a></li>
+                            <li><a href="#seguranca" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>6. Segurança dos Dados</a></li>
+                            <li><a href="#contato" class="text-muted-custom hover-primary d-block py-1"><i class="fa-solid fa-chevron-right me-2 text-primary" style="font-size: 0.7rem;"></i>7. Fale Conosco</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,13 +65,13 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="p-3 rounded-3" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <h5 class="fw-bold mb-2 text-accent" style="font-size: 1rem;"><i class="fa-solid fa-file-signature me-2"></i>Formulários de Contato</h5>
+                                <h5 class="fw-bold mb-2 text-primary" style="font-size: 1rem;"><i class="fa-solid fa-file-signature me-2"></i>Formulários de Contato</h5>
                                 <p class="text-muted-custom small mb-0" style="line-height: 1.6;">Quando você entra em contato conosco pelos formulários, coletamos: <strong>Nome, E-mail, Celular e a Mensagem enviada</strong>. Usamos esses dados exclusivamente para responder ao seu contato.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="p-3 rounded-3" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <h5 class="fw-bold mb-2 text-accent" style="font-size: 1rem;"><i class="fa-solid fa-chart-line me-2"></i>Navegação e Métricas</h5>
+                                <h5 class="fw-bold mb-2 text-primary" style="font-size: 1rem;"><i class="fa-solid fa-chart-line me-2"></i>Navegação e Métricas</h5>
                                 <p class="text-muted-custom small mb-0" style="line-height: 1.6;">Através de ferramentas analíticas e cookies, podemos coletar informações sobre o seu dispositivo (endereço IP, navegador utilizado, tempo de permanência e páginas visitadas).</p>
                             </div>
                         </div>
@@ -91,19 +91,19 @@
                     </p>
                     <ul class="list-unstyled d-flex flex-column gap-3">
                         <li class="p-3 rounded-3" style="background: var(--bg-secondary);">
-                            <strong class="text-accent d-block mb-1"><i class="fa-solid fa-circle-exclamation me-2"></i>Cookies Necessários (Essenciais)</strong>
+                            <strong class="text-primary d-block mb-1"><i class="fa-solid fa-circle-exclamation me-2"></i>Cookies Necessários (Essenciais)</strong>
                             <span class="text-muted-custom small d-block" style="line-height: 1.6;">Fundamentais para que o site funcione corretamente. Garantem a segurança e a navegação básica, não podendo ser desativados.</span>
                         </li>
                         <li class="p-3 rounded-3" style="background: var(--bg-secondary);">
-                            <strong class="text-accent d-block mb-1"><i class="fa-solid fa-sliders me-2"></i>Cookies Funcionais</strong>
+                            <strong class="text-primary d-block mb-1"><i class="fa-solid fa-sliders me-2"></i>Cookies Funcionais</strong>
                             <span class="text-muted-custom small d-block" style="line-height: 1.6;">Lembram as preferências selecionadas pelo usuário, como o idioma padrão ou dados preenchidos anteriormente, evitando que você precise reconfigurá-los.</span>
                         </li>
                         <li class="p-3 rounded-3" style="background: var(--bg-secondary);">
-                            <strong class="text-accent d-block mb-1"><i class="fa-solid fa-chart-pie me-2"></i>Cookies de Desempenho e Medição</strong>
+                            <strong class="text-primary d-block mb-1"><i class="fa-solid fa-chart-pie me-2"></i>Cookies de Desempenho e Medição</strong>
                             <span class="text-muted-custom small d-block" style="line-height: 1.6;">Fornecem relatórios estatísticos anônimos sobre o comportamento dos visitantes no site, nos ajudando a identificar falhas de design e melhorar o conteúdo.</span>
                         </li>
                         <li class="p-3 rounded-3" style="background: var(--bg-secondary);">
-                            <strong class="text-accent d-block mb-1"><i class="fa-solid fa-bullseye me-2"></i>Cookies de Publicidade</strong>
+                            <strong class="text-primary d-block mb-1"><i class="fa-solid fa-bullseye me-2"></i>Cookies de Publicidade</strong>
                             <span class="text-muted-custom small d-block" style="line-height: 1.6;">Utilizados para exibir anúncios relevantes de acordo com seu perfil de navegação e hábitos na internet.</span>
                         </li>
                     </ul>
@@ -122,7 +122,7 @@
                     </p>
                     <div class="row g-4 align-items-center">
                         <div class="col-md-7">
-                            <h5 class="fw-bold mb-2 text-accent" style="font-size: 1rem;"><i class="fa-solid fa-sliders me-2"></i>Centro de Preferências do Site</h5>
+                            <h5 class="fw-bold mb-2 text-primary" style="font-size: 1rem;"><i class="fa-solid fa-sliders me-2"></i>Centro de Preferências do Site</h5>
                             <p class="text-muted-custom small mb-0" style="line-height: 1.6;">Você pode alterar seu consentimento a qualquer momento usando nosso Painel de Consentimento de Cookies nativo. Clique no botão abaixo para reabrir as configurações de preferências.</p>
                         </div>
                         <div class="col-md-5 text-md-end">
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <hr class="my-4" style="border-color: var(--border-color);">
-                    <h5 class="fw-bold mb-2 text-accent" style="font-size: 1rem;"><i class="fa-solid fa-window-restore me-2"></i>Configurações do Navegador</h5>
+                    <h5 class="fw-bold mb-2 text-primary" style="font-size: 1rem;"><i class="fa-solid fa-window-restore me-2"></i>Configurações do Navegador</h5>
                     <p class="text-muted-custom small mb-0" style="line-height: 1.6;">
                         Se desejar, você pode configurar seu navegador de internet para recusar todos os cookies ou para alertá-lo quando um cookie for enviado. Consulte o menu "Ajuda" do seu navegador de preferência para saber como realizar essas configurações.
                     </p>
@@ -152,42 +152,42 @@
                     <div class="row g-3">
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-circle-check text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-circle-check text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Confirmação</h6>
                                 <p class="text-muted-custom small mb-0">Confirmar a existência do tratamento dos seus dados.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-eye text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-eye text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Acesso</h6>
                                 <p class="text-muted-custom small mb-0">Acessar livremente os dados mantidos sob nossa guarda.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-pen-to-square text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-pen-to-square text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Correção</h6>
                                 <p class="text-muted-custom small mb-0">Solicitar a correção de dados incompletos ou inexatos.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-trash-can text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-trash-can text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Eliminação</h6>
                                 <p class="text-muted-custom small mb-0">Solicitar exclusão de dados pessoais tratados com o seu consentimento.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-ban text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-ban text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Revogação</h6>
                                 <p class="text-muted-custom small mb-0">Revogar o consentimento fornecido para o tratamento de dados.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="p-3 rounded-3 text-center h-100" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
-                                <i class="fa-solid fa-circle-info text-accent fs-4 mb-2"></i>
+                                <i class="fa-solid fa-circle-info text-primary fs-4 mb-2"></i>
                                 <h6 class="fw-bold mb-1 text-white">Informação</h6>
                                 <p class="text-muted-custom small mb-0">Saber com quais entidades compartilhamos seus dados.</p>
                             </div>
@@ -222,9 +222,9 @@
                     <div class="p-4 rounded-3 text-center text-md-start" style="background: var(--bg-secondary); border-left: 4px solid var(--accent-color);">
                         <h5 class="fw-bold mb-3 text-white" style="font-size: 1.05rem;"><?= $escritorio; ?></h5>
                         <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-                            <li><a href="mailto:<?= $email; ?>" class="text-muted-custom hover-primary"><i class="fa-solid fa-envelope pe-2 text-accent"></i> <strong>E-mail de DPO/Contato:</strong> <?= $email; ?></a></li>
-                            <li><a href="<?= phone_link($telefone); ?>" class="text-muted-custom hover-primary"><i class="fa-solid fa-phone pe-2 text-accent"></i> <strong>Telefone:</strong> <?= $telefone; ?></a></li>
-                            <li><a href="<?= whatsapp('Olá, gostaria de esclarecimentos sobre a Política de Privacidade.'); ?>" class="text-muted-custom hover-primary"><i class="fa-brands fa-whatsapp pe-2 text-accent"></i> <strong>WhatsApp:</strong> <?= $whatsapp; ?></a></li>
+                            <li><a href="mailto:<?= $email; ?>" class="text-muted-custom hover-primary"><i class="fa-solid fa-envelope pe-2 text-primary"></i> <strong>E-mail de DPO/Contato:</strong> <?= $email; ?></a></li>
+                            <li><a href="<?= phone_link($telefone); ?>" class="text-muted-custom hover-primary"><i class="fa-solid fa-phone pe-2 text-primary"></i> <strong>Telefone:</strong> <?= $telefone; ?></a></li>
+                            <li><a href="<?= whatsapp('Olá, gostaria de esclarecimentos sobre a Política de Privacidade.'); ?>" class="text-muted-custom hover-primary"><i class="fa-brands fa-whatsapp pe-2 text-primary"></i> <strong>WhatsApp:</strong> <?= $whatsapp; ?></a></li>
                         </ul>
                     </div>
                 </div>

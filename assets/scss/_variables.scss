@@ -53,3 +53,5 @@ $spacers: (
     --border-color: var(--bs-border-color);
 }
 $min-contrast-ratio: 2 !default;
+
+.logo-light { filter: brightness(0) invert(1); }

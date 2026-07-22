@@ -3,7 +3,7 @@
 <!-- Breadcrumb -->
 <section class="bg-light pb-5 border-bottom pt-header" style="background: var(--bg-secondary) !important; border-color: var(--border-color) !important; padding-top: 150px;">
     <div class="container text-center pt-4" data-aos="fade-down">
-        <h1 class="fw-bolder mb-2" style="color: var(--text-main);">Sobre <span class="text-accent">Nós</span></h1>
+        <h1 class="fw-bolder mb-2" style="color: var(--text-main);">Sobre <span class="text-primary">Nós</span></h1>
         <p class="text-muted-custom small">Conhecemos suas necessidades e descomplicamos sua vida.</p>
     </div>
 </section>
@@ -14,7 +14,7 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <div class="pe-lg-5">
-                    <span class="text-accent subheading">Quem Somos</span>
+                    <span class="text-primary subheading">Quem Somos</span>
                     <h2 class="fw-bold mb-4" style="color: var(--text-main);">Excelência e Compromisso com seu Sucesso</h2>
                     <p class="text-muted-custom mb-4" style="line-height: 1.8;">Atuamos no mercado auxiliando as empresas, quanto a sua constituição, administração, consultorias e quando necessário, no encerramento das mesmas. Possuímos uma equipe de profissionais gabaritados nas áreas contábil, fiscal, trabalhista e de assessoria.</p>
                     <p class="text-muted-custom mb-4" style="line-height: 1.8;">As consultorias abrangem todas as áreas acima citadas. O planejamento tributário também faz parte de nosso currículo empresarial, analisamos a tributação que mais se adequa a sua empresa. Trabalhamos para poder servi-lo sempre com qualidade.</p>

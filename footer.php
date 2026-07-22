@@ -23,9 +23,9 @@
                 <div class="col-md-6 col-lg-auto text-center text-md-start">
                     <h4>Contato</h4>
                     <ul class="footer-links">
-                        <li><a href="<?= phone_link($telefone); ?>"><i class="fa-solid fa-phone pe-2 text-accent"></i> <?= $telefone; ?></a></li>
-                        <li><a href="<?= whatsapp('Olá!'); ?>"><i class="fa-brands fa-whatsapp pe-2 text-accent"></i> <?= $whatsapp; ?></a></li>
-                        <li><a href="mailto:<?= $email; ?>"><i class="fa-solid fa-envelope pe-2 text-accent"></i> <?= $email; ?></a></li>
+                        <li><a href="<?= phone_link($telefone); ?>"><i class="fa-solid fa-phone pe-2 text-primary"></i> <?= $telefone; ?></a></li>
+                        <li><a href="<?= whatsapp('Olá!'); ?>"><i class="fa-brands fa-whatsapp pe-2 text-primary"></i> <?= $whatsapp; ?></a></li>
+                        <li><a href="mailto:<?= $email; ?>"><i class="fa-solid fa-envelope pe-2 text-primary"></i> <?= $email; ?></a></li>
                     </ul>
                 </div>
                  <div class="col-md-6 col-lg-auto text-center text-md-start">
@@ -52,8 +52,8 @@
 <div id="cookieBanner" class="cookie-banner-custom" style="display: none;">
     <div class="cookie-banner-container">
         <div class="cookie-banner-text">
-            <h5 class="fw-bold mb-1"><i class="fa-solid fa-cookie-bite text-accent me-2"></i>Controle de Privacidade</h5>
-            <p class="mb-0">Utilizamos cookies essenciais e tecnologias semelhantes para fornecer uma experiência melhor e mais segura de acordo com a nossa <a href="<?= base_url('politica-de-privacidade'); ?>" class="text-accent text-decoration-underline">Política de Privacidade</a>. Ao navegar no site, você concorda com o uso de cookies.</p>
+            <h5 class="fw-bold mb-1"><i class="fa-solid fa-cookie-bite text-primary me-2"></i>Controle de Privacidade</h5>
+            <p class="mb-0">Utilizamos cookies essenciais e tecnologias semelhantes para fornecer uma experiência melhor e mais segura de acordo com a nossa <a href="<?= base_url('politica-de-privacidade'); ?>" class="text-primary text-decoration-underline">Política de Privacidade</a>. Ao navegar no site, você concorda com o uso de cookies.</p>
         </div>
         <div class="cookie-banner-actions">
             <button type="button" class="btn btn-outline-custom btn-sm py-2 px-3" id="btnCookiePreferences">Preferências</button>
@@ -68,7 +68,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content custom-modal-content">
             <div class="modal-header custom-modal-header">
-                <h5 class="modal-title fw-bold text-white fs-5" id="cookieModalLabel"><i class="fa-solid fa-gear text-accent me-2"></i>Preferências de Cookies</h5>
+                <h5 class="modal-title fw-bold text-white fs-5" id="cookieModalLabel"><i class="fa-solid fa-gear text-primary me-2"></i>Preferências de Cookies</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body custom-modal-body">
@@ -77,7 +77,7 @@
                 <div class="d-flex flex-column gap-3">
                     <div class="p-3 rounded-3" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fw-bold small text-white"><i class="fa-solid fa-shield-halved text-accent me-2"></i>1. Cookies Necessários</span>
+                            <span class="fw-bold small text-white"><i class="fa-solid fa-shield-halved text-primary me-2"></i>1. Cookies Necessários</span>
                             <div class="form-check form-switch">
                                 <input class="form-check-input custom-switch" type="checkbox" role="switch" id="cookieNecessary" checked disabled>
                             </div>
@@ -87,7 +87,7 @@
                     
                     <div class="p-3 rounded-3" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fw-bold small text-white"><i class="fa-solid fa-chart-pie text-accent me-2"></i>2. Estatísticas e Desempenho</span>
+                            <span class="fw-bold small text-white"><i class="fa-solid fa-chart-pie text-primary me-2"></i>2. Estatísticas e Desempenho</span>
                             <div class="form-check form-switch">
                                 <input class="form-check-input custom-switch" type="checkbox" role="switch" id="cookieAnalytics" checked>
                             </div>
@@ -97,7 +97,7 @@
                     
                     <div class="p-3 rounded-3" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fw-bold small text-white"><i class="fa-solid fa-bullseye text-accent me-2"></i>3. Marketing e Publicidade</span>
+                            <span class="fw-bold small text-white"><i class="fa-solid fa-bullseye text-primary me-2"></i>3. Marketing e Publicidade</span>
                             <div class="form-check form-switch">
                                 <input class="form-check-input custom-switch" type="checkbox" role="switch" id="cookieMarketing">
                             </div>

@@ -6,7 +6,7 @@ require_once 'header.php';
 <!-- Breadcrumb -->
 <section class="bg-light pb-5 border-bottom pt-header" style="background: var(--bg-secondary) !important; border-color: var(--border-color) !important; padding-top: 150px;">
     <div class="container text-center pt-4" data-aos="fade-down">
-        <h1 class="fw-bolder mb-2" style="color: var(--text-main);">Nossos <span class="text-accent">Serviços</span></h1>
+        <h1 class="fw-bolder mb-2" style="color: var(--text-main);">Nossos <span class="text-primary">Serviços</span></h1>
         <p class="text-muted-custom small">Soluções completas e personalizadas para o seu negócio.</p>
     </div>
 </section>

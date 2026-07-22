@@ -25,7 +25,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="intro-text-block">
-                    <span class="text-accent subheading">Sobre Nós</span>
+                    <span class="text-primary subheading">Sobre Nós</span>
                     <h2>Chegamos para descomplicar sua vida</h2>
                     <p>Somos uma empresa de contabilidade que chegou para descomplicar sua vida. Acreditamos que lidar com números, impostos e burocracias não precisa ser complicado nem cansativo.</p>
                     <p>Nosso objetivo é economizar seu tempo e dinheiro com soluções práticas, personalizadas e que cabem na sua rotina. Deixe a parte contábil com a gente e foque no que realmente importa: o crescimento do seu negócio.</p>
@@ -46,7 +46,7 @@
                         <div class="service-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('<?= base_url($servico['imagem']); ?>') center/cover no-repeat;"></div>
                         <div class="service-content">
                             <h3><?= $servico['titulo']; ?></h3>
-                            <p><?= $servico['intro']; ?> <i class="fa-solid fa-arrow-right text-accent"></i></p>
+                            <p><?= $servico['intro']; ?> <i class="fa-solid fa-arrow-right text-primary"></i></p>
                         </div>
                     </a>
                 </div>
@@ -59,7 +59,7 @@
 <section class="advantages-section">
     <div class="container" data-aos="fade-up">
         <div class="text-center mb-5">
-            <span class="text-accent subheading">Nosso Método</span>
+            <span class="text-primary subheading">Nosso Método</span>
             <h2 class="adv-title">Parceria sólida com transparência e eficiência</h2>
         </div>
         <div class="row g-4">
@@ -79,7 +79,7 @@
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-lg-6 cta-banner-content">
-                <span class="text-accent subheading">Sua Empresa Segura</span>
+                <span class="text-primary subheading">Sua Empresa Segura</span>
                 <h2>Traga já a sua empresa para o nosso escritório</h2>
                 <p class="mb-4 text-muted-custom">Atenderemos todas as suas necessidades contábeis com muita agilidade, presteza e de forma econômica para sua empresa. Aproveite todos os benefícios de uma boa contabilidade.</p>
                 <a href="<?= whatsapp('Olá, gostaria de saber mais!'); ?>" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Fale com um Especialista</a>
@@ -92,7 +92,7 @@
 <section id="faq" class="faq-section">
     <div class="container" data-aos="fade-up">
         <div class="text-center mb-5">
-            <span class="text-accent subheading">Dúvidas Frequentes</span>
+            <span class="text-primary subheading">Dúvidas Frequentes</span>
             <h2>Reunimos as perguntas mais comuns</h2>
             <p class="text-muted-custom">Tudo o que você precisa saber sobre abertura e manutenção de empresas.</p>
         </div>
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 split-content">
-                <i class="fa-solid fa-shield-halved text-accent fs-1 mb-3 d-block"></i>
+                <i class="fa-solid fa-shield-halved text-primary fs-1 mb-3 d-block"></i>
                 <h2>Contabilidade Simplificada & Especializada</h2>
                 <p class="text-muted-custom mb-4">Seja você um profissional da saúde, um prestador de serviços, comerciante ou produtor rural. Nossa equipe mantém suas finanças organizadas e em conformidade.</p>
                 <a href="<?= whatsapp('Olá, quero conhecer as soluções!'); ?>" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Quero conhecer as soluções</a>
@@ -146,7 +146,7 @@
 <section id="blog" class="blog-section">
     <div class="container" data-aos="fade-up">
         <div class="text-center mb-5">
-            <span class="text-accent subheading">Notícias</span>
+            <span class="text-primary subheading">Notícias</span>
             <h2>Acompanhe as novidades empresariais</h2>
         </div>
         
@@ -186,7 +186,7 @@
 <!-- Pre-footer CTA -->
 <section class="cta-footer">
     <div class="container" data-aos="fade-up">
-        <span class="text-accent subheading mb-2 d-block">Faça parte você também</span>
+        <span class="text-primary subheading mb-2 d-block">Faça parte você também</span>
         <h2>Quero fazer meu negócio crescer de verdade</h2>
         <a href="<?= whatsapp('Olá, quero abrir minha empresa!'); ?>" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Quero abrir minha empresa</a>
     </div>
