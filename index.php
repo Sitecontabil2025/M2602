@@ -43,7 +43,7 @@
             <?php if (isset($servicos)): foreach ($servicos as $servico): ?>
                 <div class="col-md-6 col-lg-3">
                     <a href="<?= whatsapp($servico['whatsapp_msg']); ?>" class="service-card" target="_blank">
-                        <div class="service-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('<?= base_url($servico['imagem']); ?>') center/cover no-repeat;"></div>
+                        <div class="service-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('<?= link_site($servico['imagem']); ?>') center/cover no-repeat;"></div>
                         <div class="service-content">
                             <h3><?= $servico['titulo']; ?></h3>
                             <p><?= $servico['intro']; ?> <i class="fa-solid fa-arrow-right text-primary"></i></p>
@@ -115,7 +115,7 @@
     <div class="container" data-aos="fade-up">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="split-img d-flex align-items-center justify-content-center" style="background: url('<?= base_url('assets/images/split_specialized.png'); ?>') center/cover no-repeat;">
+                <div class="split-img d-flex align-items-center justify-content-center" style="background: url('<?= link_site('assets/images/split_specialized.png'); ?>') center/cover no-repeat;">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 split-content">
@@ -161,12 +161,12 @@
                         <div class="card-body">
                             <small class="text-primary fw-bold mb-3 d-block"><i class="fa-regular fa-calendar-days me-1"></i> <?= mostra_data($item->pubdate, '%d de %B de %y'); ?></small>
                             <h5 class="fw-bold mb-3">
-                                <a href="<?= base_url('noticias-ler.php?id=' . $item->id); ?>" class="text-decoration-none text-white" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='white'">
+                                <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-decoration-none text-white" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='white'">
                                     <?= limitar_texto($item->titulo, 100) ?>
                                 </a>
                             </h5>
                             <p class="text-muted-custom small mb-4 opacity-75"><?= limitar_texto($item->descricao, 150) ?></p>
-                            <a href="<?= base_url('noticias-ler.php?id=' . $item->id); ?>" class="text-primary fw-bold text-decoration-none small">Leia Mais <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-primary fw-bold text-decoration-none small">Leia Mais <i class="fa-solid fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
 
         <div class="row mt-5">
             <div class="col-12 text-center text-md-end">
-                <a href="<?= base_url('noticias.php'); ?>" class="btn btn-outline-primary rounded-pill px-4 py-2">Ver Todas as Notícias <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                <a href="<?= link_site('noticias.php'); ?>" class="btn btn-outline-primary rounded-pill px-4 py-2">Ver Todas as Notícias <i class="fa-solid fa-arrow-right ms-1"></i></a>
             </div>
         </div>
     </div>

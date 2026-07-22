@@ -5,18 +5,18 @@
                 <div class="col-md-6 col-lg-auto text-center text-md-start">
                     <h4>Navegação</h4>
                     <ul class="footer-links">
-                        <li><a href="<?= base_url(''); ?>">Home</a></li>
-                        <li><a href="<?= base_url('sobre'); ?>">Sobre Nós</a></li>
-                        <li><a href="<?= base_url('servicos'); ?>">Serviços</a></li>
-                        <li><a href="<?= base_url('noticias'); ?>">Blog</a></li>
-                        <li><a href="<?= base_url('politica-de-privacidade'); ?>">Política de Privacidade</a></li>
+                        <li><a href="<?= link_site(''); ?>">Home</a></li>
+                        <li><a href="<?= link_site('sobre'); ?>">Sobre Nós</a></li>
+                        <li><a href="<?= link_site('servicos'); ?>">Serviços</a></li>
+                        <li><a href="<?= link_site('noticias'); ?>">Blog</a></li>
+                        <li><a href="<?= link_site('politica-de-privacidade'); ?>">Política de Privacidade</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-auto text-center text-md-start">
                     <h4>Utilitários</h4>
                     <ul class="footer-links footer-2-columns" id="utilitarios">
                         <?php if (isset($utilitarios)): foreach ($utilitarios as $item): ?>
-                            <li><a href="<?= base_url($item['link']); ?>"><?= $item['titulo']; ?></a></li>
+                            <li><a href="<?= $item['link']; ?>" target="_blank"><?= $item['titulo']; ?></a></li>
                         <?php endforeach; endif; ?>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="row mt-5 pt-4 border-top" style="border-color: var(--border-color) !important;">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 text-muted-custom">&copy; <?= date('Y'); ?> <?= $escritorio ?? 'Sitecontabil'; ?>. Todos os direitos reservados. &bull; <a href="<?= base_url('politica-de-privacidade'); ?>" class="hover-primary">Privacidade & Cookies</a></p>
+                    <p class="mb-0 text-muted-custom">&copy; <?= date('Y'); ?> <?= $escritorio ?? 'Sitecontabil'; ?>. Todos os direitos reservados. &bull; <a href="<?= link_site('politica-de-privacidade'); ?>" class="hover-primary">Privacidade & Cookies</a></p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p class="mb-0 text-muted-custom">Desenvolvido por <a href="https://www.sitecontabil.com.br" target="_blank">Sitecontabil®</a></p>
@@ -53,7 +53,7 @@
     <div class="cookie-banner-container">
         <div class="cookie-banner-text">
             <h5 class="fw-bold mb-1"><i class="fa-solid fa-cookie-bite text-primary me-2"></i>Controle de Privacidade</h5>
-            <p class="mb-0">Utilizamos cookies essenciais e tecnologias semelhantes para fornecer uma experiência melhor e mais segura de acordo com a nossa <a href="<?= base_url('politica-de-privacidade'); ?>" class="text-primary text-decoration-underline">Política de Privacidade</a>. Ao navegar no site, você concorda com o uso de cookies.</p>
+            <p class="mb-0">Utilizamos cookies essenciais e tecnologias semelhantes para fornecer uma experiência melhor e mais segura de acordo com a nossa <a href="<?= link_site('politica-de-privacidade'); ?>" class="text-primary text-decoration-underline">Política de Privacidade</a>. Ao navegar no site, você concorda com o uso de cookies.</p>
         </div>
         <div class="cookie-banner-actions">
             <button type="button" class="btn btn-outline-custom btn-sm py-2 px-3" id="btnCookiePreferences">Preferências</button>
@@ -124,13 +124,13 @@
 </a>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.1.0/css/all.css">
-<script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/swiper-bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/jquery.mask.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/jquery-confirm.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/aos.js') ?>"></script>
-<script src="<?= base_url('assets/js/cookie-consent.js') ?>"></script>
-<script src="<?= base_url('assets/js/scripts.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/swiper-bundle.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/jquery.mask.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/jquery-confirm.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/aos.js') ?>"></script>
+<script src="<?= link_site('assets/js/cookie-consent.js') ?>"></script>
+<script src="<?= link_site('assets/js/scripts.min.js') ?>"></script>
 
 </body>
 </html>

@@ -2,34 +2,34 @@
 $utilitarios = [
     [
         'titulo' => 'Agendas de Obrigações',
-        'link' => 'agendas.php',
+        'link' => 'https://sitecontabil.com.br/agendas_obrigacoes',
     ],
     [
         'titulo' => 'Cálculos Diversos',
-        'link' => 'utilitarios-calculos.php',
+        'link' => 'https://sitecontabil.com.br/calculos',
     ],
     [
         'titulo' => 'Certidões Negativas',
-        'link' => 'utilitarios-certidoes.php',
+        'link' => 'https://sitecontabil.com.br/certidoes_negativas',
     ],
     [
         'titulo' => 'Facilitador Contábil',
-        'link' => 'utilitarios-facilitador.php',
+        'link' => 'https://sitecontabil.com.br/facilitador_contabil',
     ],
     [
         'titulo' => 'Link Úteis',
-        'link' => 'utilitarios-links.php',
+        'link' => 'https://sitecontabil.com.br/links_uteis',
     ],
     [
         'titulo' => 'Modelos de Documentos',
-        'link' => 'utilitarios-modelos-documentos.php',
+        'link' => 'https://sitecontabil.com.br/modelos_documentos',
     ],
     [
         'titulo' => 'Dúvidas na Emissão de Notas',
-        'link' => 'utilitarios-notas.php',
+        'link' => 'https://sitecontabil.com.br/notasfiscais',
     ],
     [
         'titulo' => 'Tabelas Práticas',
-        'link' => 'utilitarios-tabelas.php',
+        'link' => 'https://sitecontabil.com.br/tabelas_praticas',
     ],
 ];

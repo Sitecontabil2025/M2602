@@ -102,10 +102,10 @@ endforeach;
     <div id="calendar" class="p-3 bg-dark-subtle rounded-4 shadow-sm"></div>
 <?php endif; ?>
 
-<link rel="stylesheet" href="<?= base_url('paginas/fullcalendar/fullcalendar.min.css') ?>" />
-<script src="<?= base_url('paginas/fullcalendar/moment.min.js') ?>"></script>
-<script src="<?= base_url('paginas/fullcalendar/fullcalendar.min.js') ?>"></script>
-<script src="<?= base_url('paginas/fullcalendar/pt-br.js') ?>"></script>
+<link rel="stylesheet" href="<?= link_site('paginas/fullcalendar/fullcalendar.min.css') ?>" />
+<script src="<?= link_site('paginas/fullcalendar/moment.min.js') ?>"></script>
+<script src="<?= link_site('paginas/fullcalendar/fullcalendar.min.js') ?>"></script>
+<script src="<?= link_site('paginas/fullcalendar/pt-br.js') ?>"></script>
 
 <script>
     $(".combobox-estados").change(function() {

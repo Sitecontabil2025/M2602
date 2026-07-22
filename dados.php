@@ -15,6 +15,7 @@ $mapa_iframe = '';
 $email = "contato@dominio.com";
 $telefone = "(11) 0000-0000";
 $whatsapp = "(11) 90000-0000";
+$cor = '#d4af37';
 
 function whatsapp($texto = null, $num = null)
 {
@@ -41,6 +42,7 @@ function phone_link($phone)
 $facebook = "#";
 $instagram = "#";
 $linkedin = "#";
+$twitter = "#";
 
 // ANO DESENVOLVIMENTO DO SITE
 function ano_copy($ano = 2025)
@@ -135,7 +137,7 @@ $regiao = array(
     'to' => 'Tocantins',
 );
 
-function base_url($path = '')
+function link_site($path = '')
 {
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
     $host = $_SERVER['HTTP_HOST'];
@@ -146,6 +148,8 @@ function base_url($path = '')
 
     return $protocol . $host . $pathBase . ltrim($path, '/');
 }
+
+$site = link_site();
 
 // CARREGA ARRAY DE UTILITARIOS
 include('contents/utilitarios.php');

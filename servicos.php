@@ -19,7 +19,7 @@ require_once 'header.php';
                     <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100" style="background: var(--bg-card); transition: transform 0.3s ease;">
                         <div class="row g-0 h-100">
                             <div class="col-sm-5">
-                                <div class="h-100" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<?= base_url($servico['imagem']); ?>') center/cover no-repeat; min-height: 250px;">
+                                <div class="h-100" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<?= link_site($servico['imagem']); ?>') center/cover no-repeat; min-height: 250px;">
                                 </div>
                             </div>
                             <div class="col-sm-7">
@@ -29,7 +29,7 @@ require_once 'header.php';
                                         <?= $servico['intro']; ?>. Nossa equipe está preparada para oferecer o suporte técnico necessário para sua empresa.
                                     </p>
                                     <div>
-                                        <a href="<?= base_url($servico['link']); ?>" class="btn btn-outline-primary rounded-pill px-4 btn-sm">Saiba Mais <i class="fa-solid fa-chevron-right ms-1 small"></i></a>
+                                        <a href="<?= link_site($servico['link']); ?>" class="btn btn-outline-primary rounded-pill px-4 btn-sm">Saiba Mais <i class="fa-solid fa-chevron-right ms-1 small"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ require_once 'header.php';
     <div class="container text-center py-4" data-aos="zoom-in">
         <h2 class="fw-bold mb-4">Ainda tem dúvidas sobre qual serviço escolher?</h2>
         <p class="text-muted-custom mb-5 mx-auto" style="max-width: 700px;">Nossos especialistas estão prontos para analisar o perfil da sua empresa e indicar as melhores soluções contábeis e fiscais.</p>
-        <a href="<?= base_url('contato'); ?>" class="btn btn-primary btn-lg rounded-pill px-5">Consultoria Gratuita</a>
+        <a href="<?= link_site('contato'); ?>" class="btn btn-primary btn-lg rounded-pill px-5">Consultoria Gratuita</a>
     </div>
 </section>
 

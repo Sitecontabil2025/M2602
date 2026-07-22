@@ -59,14 +59,14 @@ const fileContents = {
     <title><?= $escritorio; ?> - <?= $titulo_pagina; ?></title>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="<?= base_url('assets/images/favicon.png') ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= link_site('assets/images/favicon.png') ?>" type="image/x-icon">
 
     <!-- SEO META TAGS -->
     <meta property="og:title" content="<?= $titulo_pagina; ?>" />
     <meta property="og:description" content="<?= $descricao_pagina; ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="<?= $escritorio; ?>" />
-    <meta property="og:image" content="<?= base_url('assets/images/og-img.jpg') ?>">
+    <meta property="og:image" content="<?= link_site('assets/images/og-img.jpg') ?>">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="600">
@@ -80,13 +80,13 @@ const fileContents = {
     <meta name="resource-type" content="website" />
 
     <!-- ARQUIVOS CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/jquery-confirm.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/aos.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/swiper-bundle.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.min.css?v=' . time()) ?>">
+    <link rel="stylesheet" href="<?= link_site('assets/css/jquery-confirm.min.css') ?>">
+    <link rel="stylesheet" href="<?= link_site('assets/css/aos.css') ?>">
+    <link rel="stylesheet" href="<?= link_site('assets/css/swiper-bundle.min.css') ?>">
+    <link rel="stylesheet" href="<?= link_site('assets/css/style.min.css?v=' . time()) ?>">
 
     <!-- ARQUIVOS JS -->
-    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= link_site('assets/js/jquery.min.js') ?>"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
     
 </head>
@@ -102,13 +102,13 @@ const fileContents = {
 </a>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.1.0/css/all.css">
-<script src="<?= base_url('assets/js/cookie.min.js') ?>" data-position="left" data-hide="true" data-cor="var(--bs-primary)"></script>
-<script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/swiper-bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/jquery.mask.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/jquery-confirm.min.js') ?>"></script>
-<script src="<?= base_url('assets/js/aos.js') ?>"></script>
-<script src="<?= base_url('assets/js/script.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/cookie.min.js') ?>" data-position="left" data-hide="true" data-cor="var(--bs-primary)"></script>
+<script src="<?= link_site('assets/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/swiper-bundle.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/jquery.mask.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/jquery-confirm.min.js') ?>"></script>
+<script src="<?= link_site('assets/js/aos.js') ?>"></script>
+<script src="<?= link_site('assets/js/script.min.js') ?>"></script>
 
 </body>
 </html>`,
@@ -248,7 +248,7 @@ $regiao = array(
     'to' => 'Tocantins',
 );
 
-function base_url($path = '')
+function link_site($path = '')
 {
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
     $host = $_SERVER['HTTP_HOST'];
