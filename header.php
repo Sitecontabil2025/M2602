@@ -81,7 +81,7 @@
                         <a class="nav-link" href="#utilitarios">Links Úteis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= link_site('noticias.php'); ?>">Blog</a>
+                        <a class="nav-link" href="<?= link_site('blog'); ?>" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item ms-lg-3">
                         <a href="<?= link_site('contato.php'); ?>" class="btn btn-outline-primary rounded-pill btn-sm py-2 px-4">Contato</a>
