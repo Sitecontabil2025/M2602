@@ -12,6 +12,7 @@ $cidade = "Cidade/UF";
 $cep = "00000-000";
 $mapa_link = "";
 $mapa_iframe = '';
+$site = "https://dominio.com.br";
 $email = "contato@dominio.com";
 $telefone = "(11) 0000-0000";
 $whatsapp = "(11) 90000-0000";
@@ -149,7 +150,7 @@ function link_site($path = '')
     return $protocol . $host . $pathBase . ltrim($path, '/');
 }
 
-$site = link_site();
+// $site = link_site(); // Comentado para usar a variável manual definida no topo
 
 // CARREGA ARRAY DE UTILITARIOS
 include('contents/utilitarios.php');

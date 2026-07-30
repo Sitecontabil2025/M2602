@@ -11,10 +11,10 @@
 <section class="py-5" data-aos="fade-up">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-5">
+            <div class="col-lg-6 mx-auto">
                 <div class="p-5 rounded-4 shadow-sm h-100" style="background: var(--bg-card);">
                     <h3 class="fw-bold mb-4">Informações de Contato</h3>
-                    <p class="text-muted-custom mb-5">Tire todas as suas dúvidas preenchendo o formulário ao lado ou entrando em contato pelas informações abaixo.</p>
+                    <p class="text-muted-custom mb-5">Tire todas as suas dúvidas entrando em contato pelas informações abaixo.</p>
                     
                     <div class="d-flex align-items-center mb-4">
                         <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background-color: var(--accent-color);">
@@ -48,36 +48,6 @@
                 </div>
             </div>
             
-            <div class="col-lg-7">
-                <form action="enviar" method="POST" id="formcontato" class="p-5 rounded-4 shadow-sm border border-secondary" style="background: var(--bg-secondary);">
-                    <h3 class="fw-bold mb-4">Envie uma Mensagem</h3>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label class="form-label text-muted-custom">Nome Completo</label>
-                            <input type="text" name="nome" class="form-control bg-dark border-0 text-white p-3" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label text-muted-custom">Seu E-mail</label>
-                            <input type="email" name="email" class="form-control bg-dark border-0 text-white p-3" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label text-muted-custom">Telefone/WhatsApp</label>
-                            <input type="text" name="telefone" class="form-control bg-dark border-0 text-white p-3 mask-telefone" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label text-muted-custom">Assunto</label>
-                            <input type="text" name="assunto" class="form-control bg-dark border-0 text-white p-3" required>
-                        </div>
-                        <div class="col-12">
-                            <label class="form-label text-muted-custom">Mensagem</label>
-                            <textarea name="mensagem" class="form-control bg-dark border-0 text-white p-3" rows="5" required></textarea>
-                        </div>
-                        <div class="col-12 text-end mt-4">
-                            <button type="submit" class="btn btn-primary btn-lg px-5 border-0 rounded-pill">Enviar Mensagem <i class="fa-solid fa-paper-plane ms-2"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
     </div>
 </section>

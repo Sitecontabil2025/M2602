@@ -5,16 +5,18 @@ ob_start();
 session_start();
 
 
-/* 
 if (empty($_POST['g-recaptcha-response'])):
     $retorno = "";
     $retorno .= "O campo <strong>Re'Captcha</strong> é de preenchimento obrigatório.<br>";
     $resposta = array('tipo' => 'blue', 'mensagem' => $retorno);
     echo json_encode($resposta);
 else:
+
     $captcha = $_POST['g-recaptcha-response'];
+
     $secret_key = '6LenHswpAAAAANV2onVScenPGA_y9jOOmnw2h8F-';
     $response = $captcha;
+    // $remoteip = $_SERVER['REMOTE_ADDR'];
     $remoteip = $_SERVER['HTTP_CLIENT_IP'];
 
     $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $response . '&remoteip=' . $remoteip;
@@ -22,17 +24,18 @@ else:
     $data = json_decode($file);
 
     if ($data->success != '1'):
+
         $retorno = "";
         $retorno .= "O campo <strong>Re'Captcha</strong> foi negado.<br>";
         $resposta = array('tipo' => 'blue', 'mensagem' => $retorno);
         echo json_encode($resposta);
+
     else:
-*/
         // Pegando os dados do formulário de contato
-        $formnome = $_POST['nome'] ?? '';
-        $formemail = $_POST['email'] ?? '';
-        $formcelular = $_POST['telefone'] ?? '';
-        $formmensagem = $_POST['mensagem'] ?? '';
+        $formnome = $_POST['nome'];
+        $formemail = $_POST['email'];
+        $formcelular = $_POST['celular'];
+        $formmensagem = $_POST['mensagem'];
 
         // verificando se os campos foram todos digitados
         if (empty($formnome) || empty($formemail) || empty($formcelular) || empty($formmensagem)) :
@@ -126,7 +129,7 @@ else:
             // Escrevendo a mensagem do e-mail
             $mensagem = "<html>";
             $mensagem .= "<head>";
-            $mensagem .= '<meta http-equiv="content-type" content="text/html; charset=UTF-8" />';
+            $mensagem .= "<meta http-equiv="content-type" content="text/html; charset=UTF-8" />";
             $mensagem .= "<title></title>";
             $mensagem .= "</head>";
             $mensagem .= "<body style='font-size:16px; background-color:#f7f7f7; margin:0; padding:0; overflow:hidden;'>";
@@ -192,8 +195,5 @@ else:
                 echo json_encode($resposta);
             endif;
         endif;
-/* 
     endif;
 endif;
-*/
-?>
