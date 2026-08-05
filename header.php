@@ -54,7 +54,7 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="<?= link_site('index.php'); ?>">
+            <a class="navbar-brand" href="<?= link_site(''); ?>">
                 <img src="<?= link_site('assets/images/logo.png'); ?>" alt="<?= $escritorio; ?>" height="50" class="logo-light">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center gap-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= link_site('index.php'); ?>">Home</a>
+                        <a class="nav-link" href="<?= link_site(''); ?>">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= link_site('sobre.php'); ?>">Sobre Nós</a>
