@@ -138,18 +138,13 @@ body {
 .hero {
     &-section {
         position: relative;
-        height: 90vh;
         min-height: 600px;
         background: linear-gradient(rgba(24, 25, 28, 0.7), rgba(24, 25, 28, 0.9)), url('../images/hero_bg.png') center/cover no-repeat;
         display: flex;
         align-items: center;
-        margin-top: -100px; /* pull under header */
-        padding-top: 100px;
-
-        @media (max-width: 768px) {
-            height: auto;
-            padding: 150px 0 100px;
-        }
+        margin-top: calc(-1 * var(--headerHeight));
+        padding-top: calc(var(--headerHeight) + 50px);
+        padding-bottom: 50px;
     }
 
     &-content {

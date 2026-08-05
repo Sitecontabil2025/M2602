@@ -3,6 +3,7 @@
 <?php require_once("dados.php"); ?>
 <?php $json = (isset($url_json)) ? get_materias($url_json) : NULL; ?>
 <?php $json_ler = (isset($url_json_ler)) ? get_materias($url_json_ler) : NULL; ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,8 +45,9 @@
     <!-- ARQUIVOS JS -->
     <script src="<?= link_site('assets/js/jquery.min.js') ?>"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
-    
+
 </head>
+
 <body>
 
 

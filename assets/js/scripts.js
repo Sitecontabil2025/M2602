@@ -1,3 +1,19 @@
+const myItem = (el) => document.querySelector(el);
+const myArray = (el) => document.querySelectorAll(el);
+
+const Header = myItem('#mainNav')
+const Hero = myItem('#hero');
+
+function adjustBanner() {
+    if (!Header || !Hero) return
+    const headerHeight = Header.offsetHeight;
+    Hero.style.setProperty("--headerHeight", `${headerHeight}px`);
+}
+
+window.addEventListener("load", adjustBanner);
+window.addEventListener("resize", adjustBanner);
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize AOS animations
     if (typeof AOS !== 'undefined') {

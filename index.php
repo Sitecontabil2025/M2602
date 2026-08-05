@@ -1,7 +1,8 @@
-<?php $titulo_pagina = "Bem-vindo"; require_once('header.php'); ?>
+<?php $titulo_pagina = "Bem-vindo";
+require_once('header.php'); ?>
 
 <!-- Hero Section -->
-<section class="hero-section">
+<section class="hero-section" id="hero">
     <div class="container">
         <div class="hero-content" data-aos="fade-up">
             <h1 class="hero-title">Conquiste e fidelize seus clientes com estratégias inteligentes</h1>
@@ -41,16 +42,17 @@
     <div class="container pt-8" data-aos="fade-up">
         <div class="row g-4">
             <?php if (isset($servicos)): foreach ($servicos as $servico): ?>
-                <div class="col-md-6 col-lg-3">
-                    <a href="<?= whatsapp($servico['whatsapp_msg']); ?>" class="service-card" target="_blank">
-                        <div class="service-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('<?= link_site($servico['imagem']); ?>') center/cover no-repeat;"></div>
-                        <div class="service-content">
-                            <h3><?= $servico['titulo']; ?></h3>
-                            <p><?= $servico['intro']; ?> <i class="fa-solid fa-arrow-right text-primary"></i></p>
-                        </div>
-                    </a>
-                </div>
-            <?php endforeach; endif; ?>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="<?= whatsapp($servico['whatsapp_msg']); ?>" class="service-card" target="_blank">
+                            <div class="service-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('<?= link_site($servico['imagem']); ?>') center/cover no-repeat;"></div>
+                            <div class="service-content">
+                                <h3><?= $servico['titulo']; ?></h3>
+                                <p><?= $servico['intro']; ?> <i class="fa-solid fa-arrow-right text-primary"></i></p>
+                            </div>
+                        </a>
+                    </div>
+            <?php endforeach;
+            endif; ?>
         </div>
     </div>
 </section>
@@ -64,12 +66,13 @@
         </div>
         <div class="row g-4">
             <?php if (isset($metodos)): foreach ($metodos as $index => $metodo): ?>
-                <div class="col-md-6 col-lg-3 adv-item">
-                    <div class="adv-icon"><i class="<?= $metodo['icone']; ?>"></i></div>
-                    <h4><?= $index + 1; ?>. <?= $metodo['titulo']; ?></h4>
-                    <p><?= $metodo['descricao']; ?></p>
-                </div>
-            <?php endforeach; endif; ?>
+                    <div class="col-md-6 col-lg-3 adv-item">
+                        <div class="adv-icon"><i class="<?= $metodo['icone']; ?>"></i></div>
+                        <h4><?= $index + 1; ?>. <?= $metodo['titulo']; ?></h4>
+                        <p><?= $metodo['descricao']; ?></p>
+                    </div>
+            <?php endforeach;
+            endif; ?>
         </div>
     </div>
 </section>
@@ -96,16 +99,17 @@
             <h2>Reunimos as perguntas mais comuns</h2>
             <p class="text-muted-custom">Tudo o que você precisa saber sobre abertura e manutenção de empresas.</p>
         </div>
-        
+
         <div class="row g-4">
             <?php if (isset($faqs)): foreach ($faqs as $faq): ?>
-                <div class="col-lg-6">
-                    <div class="faq-card">
-                        <h4><?= $faq['pergunta']; ?></h4>
-                        <p><?= $faq['resposta']; ?></p>
+                    <div class="col-lg-6">
+                        <div class="faq-card">
+                            <h4><?= $faq['pergunta']; ?></h4>
+                            <p><?= $faq['resposta']; ?></p>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; endif; ?>
+            <?php endforeach;
+            endif; ?>
         </div>
     </div>
 </section>
@@ -133,11 +137,12 @@
     <div class="container" data-aos="fade-up">
         <div class="row text-center g-4">
             <?php if (isset($counters)): foreach ($counters as $counter): ?>
-                <div class="col-6 col-lg-3 counter-item">
-                    <h3><?= $counter['valor']; ?></h3>
-                    <p><?= $counter['titulo']; ?></p>
-                </div>
-            <?php endforeach; endif; ?>
+                    <div class="col-6 col-lg-3 counter-item">
+                        <h3><?= $counter['valor']; ?></h3>
+                        <p><?= $counter['titulo']; ?></p>
+                    </div>
+            <?php endforeach;
+            endif; ?>
         </div>
     </div>
 </section>
@@ -149,29 +154,32 @@
             <span class="text-primary subheading">Notícias</span>
             <h2>Acompanhe as novidades empresariais</h2>
         </div>
-        
+
         <div class="row g-4">
-            <?php 
-            $dados = get_materias('https://sitecontabil.com.br/json/?db=sc_noticias&limite=3'); 
+            <?php
+            $dados = get_materias('https://sitecontabil.com.br/json/?db=sc_noticias&limite=3');
             if ($dados && !isset($dados->error)):
-                foreach ($dados as $item): 
+                foreach ($dados as $item):
             ?>
-                <div class="col-lg-4">
-                    <div class="card h-100 border-0 feature-card shadow-sm rounded-4 px-3 py-4" style="background-color: var(--bg-secondary);">
-                        <div class="card-body">
-                            <small class="text-primary fw-bold mb-3 d-block"><i class="fa-regular fa-calendar-days me-1"></i> <?= mostra_data($item->pubdate, '%d de %B de %y'); ?></small>
-                            <h5 class="fw-bold mb-3">
-                                <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-decoration-none text-white" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='white'">
-                                    <?= limitar_texto($item->titulo, 100) ?>
-                                </a>
-                            </h5>
-                            <p class="text-muted-custom small mb-4 opacity-75"><?= limitar_texto($item->descricao, 150) ?></p>
-                            <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-primary fw-bold text-decoration-none small">Leia Mais <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 feature-card shadow-sm rounded-4 px-3 py-4" style="background-color: var(--bg-secondary);">
+                            <div class="card-body">
+                                <small class="text-primary fw-bold mb-3 d-block"><i class="fa-regular fa-calendar-days me-1"></i> <?= mostra_data($item->pubdate, '%d de %B de %y'); ?></small>
+                                <h5 class="fw-bold mb-3">
+                                    <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-decoration-none text-white" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='white'">
+                                        <?= limitar_texto($item->titulo, 100) ?>
+                                    </a>
+                                </h5>
+                                <p class="text-muted-custom small mb-4 opacity-75"><?= limitar_texto($item->descricao, 150) ?></p>
+                                <a href="<?= link_site('noticias-ler.php?id=' . $item->id); ?>" class="text-primary fw-bold text-decoration-none small">Leia Mais <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
                         </div>
                     </div>
+                <?php endforeach;
+            else: ?>
+                <div class="col-12 text-center">
+                    <p class="text-muted-custom">Ocorreu um erro ao carregar as notícias. Tente novamente mais tarde.</p>
                 </div>
-            <?php endforeach; else: ?>
-                <div class="col-12 text-center"><p class="text-muted-custom">Ocorreu um erro ao carregar as notícias. Tente novamente mais tarde.</p></div>
             <?php endif; ?>
         </div>
 
